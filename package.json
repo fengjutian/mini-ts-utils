@@ -1,0 +1,27 @@
+{
+  "name": "mini-ts-utils",
+  "version": "1.0.0",
+  "description": "A lightweight lodash-like utility library for TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:cov": "vitest run --coverage"
+  },
+  "keywords": [
+    "typescript",
+    "lodash",
+    "utils",
+    "array",
+    "object"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.1"
+  }
+}
