@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1758952544245" clover="3.2.0">
+  <project timestamp="1758952544245" name="All files">
+    <metrics statements="131" coveredstatements="131" conditionals="50" coveredconditionals="49" methods="18" coveredmethods="18" elements="199" coveredelements="198" complexity="0" loc="131" ncloc="131" packages="1" files="5" classes="5"/>
+    <file name="array.ts" path="/Users/jutianfeng/Desktop/mini-ts-utils/src/array.ts">
+      <metrics statements="30" coveredstatements="30" conditionals="14" coveredconditionals="14" methods="6" coveredmethods="6"/>
+      <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="2" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="17" count="4" type="stmt"/>
+      <line num="18" count="4" type="cond" truecount="3" falsecount="0"/>
+      <line num="19" count="4" type="stmt"/>
+      <line num="20" count="4" type="stmt"/>
+      <line num="21" count="4" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="29" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="30" count="1" type="stmt"/>
+    </file>
+    <file name="func.ts" path="/Users/jutianfeng/Desktop/mini-ts-utils/src/func.ts">
+      <metrics statements="34" coveredstatements="34" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
+      <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="16" count="3" type="stmt"/>
+      <line num="17" count="3" type="cond" truecount="1" falsecount="0"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="21" count="3" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="28" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="32" count="2" type="stmt"/>
+      <line num="33" count="2" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+    </file>
+    <file name="index.ts" path="/Users/jutianfeng/Desktop/mini-ts-utils/src/index.ts">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+    </file>
+    <file name="object.ts" path="/Users/jutianfeng/Desktop/mini-ts-utils/src/object.ts">
+      <metrics statements="40" coveredstatements="40" conditionals="20" coveredconditionals="20" methods="5" coveredmethods="5"/>
+      <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="2" count="17" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="17" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="4" type="stmt"/>
+      <line num="8" count="7" type="cond" truecount="1" falsecount="0"/>
+      <line num="9" count="4" type="cond" truecount="1" falsecount="0"/>
+      <line num="10" count="6" type="stmt"/>
+      <line num="11" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="12" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="14" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="15" count="4" type="stmt"/>
+      <line num="16" count="4" type="stmt"/>
+      <line num="17" count="6" type="stmt"/>
+      <line num="18" count="4" type="stmt"/>
+      <line num="19" count="4" type="stmt"/>
+      <line num="20" count="4" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="22" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="28" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="30" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="34" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="35" count="2" type="stmt"/>
+      <line num="36" count="2" type="stmt"/>
+      <line num="37" count="2" type="stmt"/>
+      <line num="38" count="2" type="stmt"/>
+      <line num="39" count="2" type="cond" truecount="4" falsecount="0"/>
+      <line num="40" count="2" type="stmt"/>
+    </file>
+    <file name="string.ts" path="/Users/jutianfeng/Desktop/mini-ts-utils/src/string.ts">
+      <metrics statements="23" coveredstatements="23" conditionals="7" coveredconditionals="6" methods="4" coveredmethods="4"/>
+      <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
