@@ -78,3 +78,20 @@ export function intersection<T>(a: T[], b: T[]): T[] {
   const setB = new Set(b);
   return a.filter(x => setB.has(x));
 }
+
+/**
+ * 使用 Fisher–Yates 算法返回一个随机打乱的新数组（不修改原数组）。
+ * @template T 元素类型
+ * @param array 源数组
+ * @returns 随机顺序的新数组
+ * @example
+ * shuffle([1,2,3,4]) // => 例如 [3,1,4,2]
+ */
+export function shuffle<T>(array: T[]): T[] {
+  const a = array.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
