@@ -12,6 +12,14 @@
 npm i mini-ts-utils
 ```
 
+```bash
+yarn add mini-ts-utils
+```
+
+```bash
+pnpm add mini-ts-utils
+```
+
 ## 快速开始
 
 ```ts
@@ -32,6 +40,20 @@ const log = debounce(() => console.log('run'), 200);
 log();
 ```
 
+### 导入方式
+
+- ESM（推荐）
+```ts
+import { chunk, shuffle } from 'mini-ts-utils';
+```
+
+- CommonJS
+```js
+const { chunk, shuffle } = require('mini-ts-utils');
+```
+
+> 提示：库提供完整的类型声明，支持 Tree-Shaking；选择性导入即可按需打包。
+
 ## API
 
 ### Array
@@ -41,6 +63,7 @@ log();
 - `flattenDeep<T>(array: any[]): T[]` 深度扁平
 - `uniq<T>(array: T[]): T[]` 去重
 - `intersection<T>(a: T[], b: T[]): T[]` 交集
+- `shuffle<T>(array: T[]): T[]` 随机洗牌（Fisher–Yates，返回新数组，不改原数组）
 
 ### Object
 - `isObject(value: any): value is Record<string, any>` 是否为普通对象
@@ -59,6 +82,51 @@ log();
 - `debounce<T extends (...args: any[]) => void>(fn: T, delay = 300)` 防抖
 - `throttle<T extends (...args: any[]) => void>(fn: T, limit = 300)` 节流
 - `once<T extends (...args: any[]) => any>(fn: T): T` 只执行一次
+
+## 更多示例
+
+```ts
+import { 
+  chunk, compact, flatten, flattenDeep, uniq, intersection, shuffle,
+  mergeDeep, pick, omit, get,
+  capitalize, camelCase, kebabCase, snakeCase,
+  debounce, throttle, once,
+} from 'mini-ts-utils';
+
+// 1) Array
+const a = [1, 2, 2, 3, 4];
+chunk(a, 2);            // [[1,2], [2,3], [4]]
+compact([0, 1, false]); // [1]
+flatten([[1],[2,[3]]]); // [1,2,[3]]
+flattenDeep([1,[2,[3]]]); // [1,2,3]
+uniq(a);                // [1,2,3,4]
+intersection([1,2,3],[2,4]); // [2]
+shuffle([1,2,3,4]);     // 例如 [3,1,4,2]（不改原数组）
+
+// 2) Object
+mergeDeep({x: {a: 1}}, {x: {b: 2}}); // { x: { a:1, b:2 } }
+pick({a:1,b:2}, ['a']);             // { a:1 }
+omit({a:1,b:2}, ['a']);             // { b:2 }
+get({ a: { b: 1 } }, 'a.b', 0);      // 1
+
+// 3) String
+capitalize('hello');                 // 'Hello'
+camelCase('hello_world test');       // 'helloWorldTest'
+kebabCase('HelloWorld text');        // 'hello-world-text'
+snakeCase('HelloWorld text');        // 'hello_world_text'
+
+// 4) Function
+const d = debounce(() => {}, 200);   // 200ms 静默后触发
+d();
+const t = throttle(() => {}, 300);   // 300ms 内最多一次
+t();
+const onceInit = once(() => Math.random());
+onceInit(); onceInit();              // 第二次返回第一次的结果
+```
+
+### 关于 shuffle 的随机性
+- 采用 Fisher–Yates（Durstenfeld/Knuth）算法，均匀无偏；复杂度 O(n)。
+- `Math.random()` 非加密安全，如需更强随机性可在 Node 使用 `crypto.randomInt` 或注入可复现实验的 PRNG。
 
 ## 构建
 
